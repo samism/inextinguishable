@@ -45,4 +45,5 @@ a.disabled {
 .about-pic {
   width: 300px;
   float: left;
+  margin-right: 2em;
 }
