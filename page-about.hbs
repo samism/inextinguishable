@@ -1,0 +1,37 @@
+{{!< default}}
+
+{{!-- The comment above "< default" means - insert everything in this file into
+    the {{{body}}} of the default.hbs template, containing the blog header/footer. --}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<header>
+    <nav class="mb4 tc">
+        {{#if @blog.navigation}}
+            <a class="ttu no-underline link dim ba br2 ph3 pv1" href="{{@blog.url}}">Home</a>
+        {{/if}}
+    </nav>
+</header>
+
+<main class="" role="main">
+    <article class="{{post_class}}">
+        <header class="pb5">
+            <h1 class="f1-ns f2-m f3 fw3 tc ttu tracked mb0-ns">About Me</h1>
+        </header>
+
+        <section class="lh-copy f4-ns f5 center mw8 pb4">
+            <img src="/assets/img/headshot-min.png" alt="" class="about-pic">
+            <p>I'm an aspiring software engineer with a propensity for front-end work. Currently attending the University of Illinois at Chicago and will graduate early 2018.</p>
+            <p>As a Chicago native, I have worked in low-level politics operating polling stations, worked to redefine Real Estate at <a href="https://www.redfin.com/">Redfin</a>, and have had some professional experience interning as a Software Engineer.</p>
+            <p>I have most recently travelled to <em>Las Vegas, NV</em> and <em>Miami, FL!</em></p>
+            <hr>
+            <h3>Contact</h3>
+            <p>If you would like to reach out, <a href="mailto:sam@samism.net">shoot me</a> an email!</p>
+        </section>
+    </article>
+</main>
+
+<div class="fb-comments" data-href="https://samism.net" data-width="864" data-numposts="5"></div>
+
+{{/post}}

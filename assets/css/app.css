@@ -41,3 +41,8 @@ a.disabled {
 .post img {
   max-width: 100%;
 }
+
+.about-pic {
+  width: 300px;
+  float: left;
+}
